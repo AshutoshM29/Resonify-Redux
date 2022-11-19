@@ -1,0 +1,29 @@
+.menu-bar {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.empt-history {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.historyList-container {
+  grid-gap: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+
+@media screen and (max-width: 567px) {
+  .menu-bar {
+    justify-content: space-around;
+  }
+
+  .container-videos {
+    justify-content: center;
+  }
+}
