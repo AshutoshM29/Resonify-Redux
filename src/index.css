@@ -1,0 +1,107 @@
+@import 'react-toastify/dist/ReactToastify.css';
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Dosis:wght@400;500;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --main-color: #FDD947;
+  --mustard-mild: #fdd121;
+  --mustard-dark: #fec816;
+  --mustard-darker: #ffb910;
+
+  --gray-main: #252525;
+  --gray-mild: #444444;
+  --gray-light: #D5D5D3;
+  --gray-lighter: #e9ecef;
+  --gray-back: #f7f7ff;
+
+  --black: #2b373d;
+  --white: #ffffff;
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 2000rem;
+  margin: auto;
+  font-family: 'Dongle', sans-serif;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--gray-main);
+}
+
+button:focus {
+  outline:none;
+}
+
+.btn {
+  font-family: 'Dongle', sans-serif;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+}
+
+.btn-primary-outline {
+  color: var(--main-color);
+  border: solid 2px var(--main-color);
+}
+
+.btn-primary-outline:hover {
+  background-color: var(--main-color);
+}
+
+Link {
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  color: var(--gray-main);
+}
+
+input:focus {
+  outline: none;
+}
+
+.material-icons,
+.material-icons-outlined {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.btn-primary-solid {
+  background-color: var(--gray-main);
+  border: solid 2px var(--main-color);
+  color: var(--main-color);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.btn-primary-solid:hover {
+  border: solid 2px var(--gray-main);
+  background-color: var(--mustard-mild);
+  color: var(--gray-main);
+}
+
+ /* width */
+ ::-webkit-scrollbar {
+  width: 1rem;
+}
+
+select:focus {
+  outline: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--gray-lighter); 
+  border-radius: 5rem;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mustard-mild); 
+}
