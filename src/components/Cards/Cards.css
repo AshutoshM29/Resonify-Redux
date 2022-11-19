@@ -1,0 +1,109 @@
+  .container-video-card {
+    max-width: 30rem;
+    width: 100%;
+    min-height: fit-content;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+    background-color: var(--gray-mild);
+    border-radius: 0.5rem;
+  }
+
+  .video-description {
+    gap: 1rem;
+    text-align: left;
+    padding: 1.2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  .container-video-card .icon {
+    position: absolute;
+    top: 1rem;
+    right: 0.4rem;
+    cursor: pointer;
+    background-color: var(--white);
+    padding: 0.2rem;
+    border-radius: 50%;
+  }
+
+  .container-video-card .icon-cross {
+    position: absolute;
+    top: 1rem;
+    right: 0.4rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    border-radius: 50%;
+  }
+
+  i.material-icons.icon {
+    color: var(--red-dominant);
+    width: 2.4rem;
+    height: 2.5rem;
+    font-size: 2rem;
+    position: absolute;
+    left: 26.5rem;
+  }
+
+  .video-thumbnail {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: var(--main-color);
+  }
+
+  .container-modal-opt {
+    position: relative;
+  }
+
+  .container-modal-opt .submenu-modal {
+    position: absolute;
+    right: 0rem;
+    z-index: 1;
+    border: solid 2px var(--main-color);
+    background-color: var(--gray-main);
+    color: var(--white);
+  }
+
+  .video-title {
+    color: var(--gray-light);
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .channel-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .video-title>.link-video:hover {
+    color: var(--main-color);
+  }
+
+  .video-details {
+    color: var(--gray-light);
+  }
+
+  .avatar-xxs {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+  }
