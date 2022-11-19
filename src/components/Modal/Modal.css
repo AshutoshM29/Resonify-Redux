@@ -1,0 +1,180 @@
+.playlist-modal-main {
+  display: flex;
+}
+
+.modal {
+  z-index: 9;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.modalPlaylist-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-btn-modal {
+  display: flex;
+  justify-content: end;
+}
+
+.input-playlist {
+  color: black;
+  padding: 0.1rem 0.5rem;
+  border: none;
+  outline: transparent;
+}
+
+.input-playlist::placeholder {
+  color: black;
+  border-radius: 0.5rem;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.icon-back {
+  background-color: var(--gray-main);
+  cursor: pointer;
+}
+
+/*   
+  .playlist-close-btn {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 0.2rem;
+    cursor: pointer;
+  }
+  
+  .delplaylistNameIcon {
+    cursor: pointer;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 40rem;
+  margin-right: 26rem;
+  inset: 0;
+  background: transparent;
+  z-index: 4;
+}
+
+.modal {
+  position: relative;
+  max-width: 20rem;
+  max-height: 20rem;
+  background: var(--gray-lighter);
+  color: var(--gray-main);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInDown 0.5s;
+}
+
+.modal-content-list>li {
+  list-style-type: none;
+}
+
+.modal-content-list {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.modal-heading {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.unordered-list {
+  display: flex;
+  gap: 0.6rem;
+  color: var(--black);
+  align-items: center;
+}
+
+.modal-close-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: var(--gray-main);
+  border-radius: 50%;
+  height: 2.5rem;
+}
+
+.modal-icon {
+  color: var(--gray-main);
+}
+
+.input-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px var(--gray-main);
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  color: var(--gray-main);
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
