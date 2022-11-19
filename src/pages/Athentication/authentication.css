@@ -1,0 +1,140 @@
+.authentication-page {
+  height: 100vh;
+  position: relative;
+}
+
+.container-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-login {
+  margin-top: 8rem;
+}
+
+.authentication-container-form {
+  margin: 4rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-content: center;
+  flex-wrap: wrap;
+  min-width: 25rem;
+  padding: 1rem;
+  color: var(--white);
+  font-weight: bolder;
+  background-color: var(--gray-mild);
+  border-radius: 0.5rem;
+}
+
+.authentication-page .input-label {
+  text-align: left;
+  margin: 0 0 -1rem 2rem;
+}
+
+.authentication-page .input-icon {
+  border: solid 2px var(--main-color);
+}
+
+.input-icon>input {
+  max-width: 100%;
+  color: var(--white);
+}
+
+.container-form .h3 {
+  margin-bottom: 1rem;
+}
+
+.container-checkbox {
+  width: 100%;
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.form-login .container-checkbox {
+  justify-content: space-between;
+}
+
+.checkbox {
+  margin-top: 0.15rem;
+}
+
+.checkbox-detail {
+  margin-left: 0.5rem;
+  color: var(--main-color);
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.icons-right {
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.form .btn-link {
+  color: var(--gray-light);
+}
+
+form .btn-link:hover {
+  color: var(--main-color);
+}
+
+.authentication-page .btn-primary-solid {
+  color: var(--gray-main);
+  background-color: var(--main-color);
+}
+
+.authentication-page .btn-primary-solid:hover {
+  color: var(--main-color);
+  background-color: var(--gray-mild);
+  border: solid 2px var(--main-color);
+}
+
+.authentication-page .btn-primary-outline:hover {
+  color: var(--gray-mild);
+}
+
+.logout-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+@media screen and (max-width: 567px) {
+  .input-with-icon>input {
+    max-width: 19rem;
+  }
+
+  .form {
+    min-width: 20rem;
+  }
+
+  .input-icon>input {
+    max-width: 21rem;
+  }
+
+  .form-login input {
+    max-width: 17.5rem;
+  }
+
+  .container-checkbox {
+    font-size: 0.9rem;
+  }
+}
